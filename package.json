@@ -1,0 +1,36 @@
+{
+  "name": "next-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "next lint",
+    "start": "next start",
+    "start:dev": "next dev",
+    "start:build": "next build",
+    "start:format": "prettier --write \"src/**/*.{js,ts,tsx}\"",
+    "start:server": "json-server --watch src/services/api.json --port 8080"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.1.1",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.4.0",
+    "json-server": "^0.17.3",
+    "next": "13.4.6",
+    "postcss": "8.4.24",
+    "prettier": "^2.8.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.0",
+    "tailwindcss": "3.3.2",
+    "typescript": "5.1.3",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/json-server": "^0.14.4",
+    "@types/node": "^20.3.1",
+    "@types/prettier": "^2.7.3",
+    "@types/react": "^18.2.13",
+    "@types/react-dom": "^18.2.6"
+  }
+}

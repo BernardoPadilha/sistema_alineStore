@@ -1,0 +1,6 @@
+import axios from "axios";
+
+// Configuração padrão do axios, pegando a base url das variáveis de ambiente
+export const api = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_BASE_URL,
+});
