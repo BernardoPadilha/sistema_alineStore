@@ -1,7 +1,7 @@
 import { format } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 
-import { Clock, Coins } from 'phosphor-react';
+import { Clock } from '@phosphor-icons/react'
 
 export function Header() {
   const currentDate = format(new Date(), "dd 'de' MMMM 'de' yyyy", {

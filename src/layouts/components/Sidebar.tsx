@@ -12,13 +12,12 @@ export function Sidebar({ active = true }: SidebarProps) {
               <img
                 src="/logo.png"
                 alt="Logo"
-                className="w-full h-full object-cover"
+                className="object-cover"
               />
             </div>
           </div>
 
           <div className="flex-1 py-5 flex flex-col items-center gap-2">
-                  
           </div>
         </aside>
       )}

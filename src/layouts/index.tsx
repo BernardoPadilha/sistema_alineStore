@@ -5,13 +5,13 @@ import { Header } from './components/Header';
 interface SchemaProps {
   children: ReactNode;
   sidebarActive?: boolean;
-  activeLoggoutButton?: boolean;
+  activeLogoutButton?: boolean;
 }
 
 export function Schema({
   children,
   sidebarActive = true,
-  activeLoggoutButton = true,
+  activeLogoutButton = true,
 }: SchemaProps) {
   return (
     <section className="w-full h-screen flex">

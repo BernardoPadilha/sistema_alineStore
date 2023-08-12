@@ -1,16 +1,24 @@
-import { DataTable } from 'primereact/datatable';
-import { Column } from 'primereact/column';
+import { Schema } from '@/layouts'
+import * as Dialog from '@radix-ui/react-dialog'
 
 export default function Home() {
   return (
-    <main className='w-full h-screen bg-slate-500 flex items-center justify-center'>
+    <Schema>
+      <main className='w-full h-screen'>
       <div className=''>
-      <DataTable>
-        <Column field='name' header='Nome' />
-        <Column field='cpf' header='Cpf' />
-        <Column field='credit' header='Crédito' />
-      </DataTable>
+        <Dialog.Root>
+          <Dialog.Trigger>Novo cliente</Dialog.Trigger>
+
+          <Dialog.Portal>
+            <Dialog.Overlay />
+
+            <Dialog.Content>
+              <Dialog.Title>Novo Cliente</Dialog.Title>
+            </Dialog.Content>
+          </Dialog.Portal>
+        </Dialog.Root>
       </div>
     </main>
+    </Schema>
   )
 }
